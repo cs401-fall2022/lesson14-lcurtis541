@@ -1,1 +1,1 @@
-# github-classroom-blank-starter
+This program's typscript is now compiled using "tsc .\scripts.ts". This created a js file that the web browser can use. I added a button that changes text on the DOM. I have two tests using Qunit to test the functionality of these buttons.
