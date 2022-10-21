@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
-   <title>TypsScript for Dummies</title>
+   <title>TypeScript for Dummies</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <script src="scripts.js" defer> </script>
 
 </head>
 
 <body>
- <div class="container">
-      <h1>TypsScript for Dummies</h1>
-  <div class="section">
-     <div class="sectionTitle" id="sectionOneTite">Starting a TypeScript Project</div>
-     <div class="sectionContents">
-        <h3>You make a Project</h3>
-        <button id="changeTitleButton">Click me to change header</button>
-     </div>
-  </div>
-  <div class="section">
-     <div class="sectionTitle">Learning Typescript from OOP</div>
-     <div class="sectionContents">
-        <h3>You will learn things</h3>
-     </div>
-  </div>
-  <div class="section">
-    <div class="sectionTitle">TypsScript vs JavaScript</div>
-    <div class="sectionContents">
-       <h3>Similarities will be here, like code comparison.</h3>
-    </div>
- </div>
- <div class="section">
-   <div class="sectionTitle">How this Typescript Project Works</div>
-   <div class="sectionContents">
-      <h3>Since typescript cannot natively run in web browsers,
-         we wright our actions into the scripts.ts file, and run 
-         "tsx ./scripts.ts". This generates our js file that browsers
-         can read from.
-      </h3>
+   <div class="container">
+      <h1>TypeScript for Dummies</h1>
+      <div class="section">
+         <div class="sectionTitle"><h2 id="sectionOneTite">Starting a TypeScript Project</h2></div>
+         <div class="sectionContents">
+            <h3>Here is an example of what typescipt/javascript can do to a website. Click the button below me!</h3>
+            <button class="button" id="changeTitleButton">Click me to change header</button>
+            <p>Below is the code that makes this button do what it does! Just like TS, it can use the DOM to locate parts of HTML and change them.</p>
+            <img class="TSImage" src="images/TypeScriptCode.png">
+         </div>
+      </div>
+      <div class="section">
+         <div class="sectionTitle"><h2>Learning Typescript from OOP</h2></div>
+         <div class="sectionContents">
+            <h3>Although not directly a class based OOP language, you can still perform OOP features through typescript.
+            </h3>
+            <div class="code-container">
+               <code><div class="line"><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #1C6277">Demo</span><span style="color: #000000"> {</span></div><div class="line"><span style="color: #000000">  </span><span style="color: #001080">   property</span><span style="color: #000000">: </span><span style="color: #1C6277">string</span><span style="color: #000000">;</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #000000">  </span><span style="color: #0000FF">constructor</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">: </span><span style="color: #1C6277">string</span><span style="color: #000000">) {</span></div><div class="line"><span style="color: #000000">    </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">property</span><span style="color: #000000"> = </span><span style="color: #001080">message</span><span style="color: #000000">;</span></div><div class="line"><span style="color: #000000">  }</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #000000">  </span><span style="color: #795E26">testFunction</span><span style="color: #000000">() {</span></div><div class="line"><span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #A31515">"Hello, "</span><span style="color: #000000"> + </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">property</span><span style="color: #000000">;</span></div><div class="line"><span style="color: #000000">  }</span></div><div class="line"><span style="color: #000000">}</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">demoClass</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Demo</span><span style="color: #000000">(</span><span style="color: #A31515">"CS401"</span><span style="color: #000000">);</span></div></code>
+               <p>This allows you to create and use classed somewhat like OOP. You can have internal properties, functions, and many other OOP like functions.</p>
+            </div>
+         </div>
+      </div>
+      <div class="section">
+         <div class="sectionTitle"><h2>TypeScript vs JavaScript</h2></div>
+         <div class="sectionContents">
+            <h3>Similarities and differences</h3>
+            <p>Typescript and Javascript are very similar languages. Typescript is actually based on Javascript, but with more strict standards. The main one being types. Functions and variables in Typescript must be specifically types unlike in Javascript. Thankfully TypeScript allows implicit typing so for example:</p>
+            <h3>const testVar = "HELLO"</h3>
+            <p>This variable will be a constant, but its type is implied it is a string. In normal JS, it does not care about its type, in TypsScript it does.</p>
+         </div>
+      </div>
+      <div class="section">
+         <div class="sectionTitle"><h2>How this Typescript Project Works</h2></div>
+         <div class="sectionContents">
+            <h3>Since typescript cannot natively run in web browsers,
+               we wright our actions into the scripts.ts file, and run
+               "tsx ./scripts.ts". This generates our js file that browsers
+               can read from.
+            </h3>
+            <img class="TSImage" src="images/typescriptExplained.jpg">
+            <br>
+            <a href="https://radixweb.com/blog/typescript-vs-javascript">Image Sourced From Here</a>
+         </div>
+      </div>
    </div>
-</div>
- </div>
-</body>
-<div id="qunit"></div>
+   </body>
+<!-- <div id="qunit"></div>
 <div id="qunit-fixture"></div>
 <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
-<script src="js/test.js"></script>
+<script src="js/test.js"></script> -->
 
 </html>
-  

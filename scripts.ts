@@ -1,6 +1,6 @@
 
-const titleChangeButton = document.getElementById("changeTitleButton");
-const sectionOneTite = document.getElementById("sectionOneTite");
+var titleChangeButton = document.getElementById("changeTitleButton");
+var sectionOneTite = document.getElementById("sectionOneTite");
 
 console.log("Hello world!");
 
